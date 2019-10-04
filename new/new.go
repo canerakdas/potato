@@ -2,7 +2,7 @@ package new
 
 import (
 	"fmt"
-	"imlazy/color"
+	"potato/color"
 	"log"
 	"os"
 	"os/exec"

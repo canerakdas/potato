@@ -3,8 +3,8 @@ package main
 import (
 	"flag"
 	"fmt"
-	"imlazy/color"
-	"imlazy/new"
+	"potato/color"
+	"potato/new"
 	"os"
 )
 
