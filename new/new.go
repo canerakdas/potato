@@ -27,9 +27,7 @@ var tpl *template.Template
 
 func init() {
 	gopath := os.Getenv("GOPATH")
-	if gopath == "" {
-		gopath = build.Default.GOPATH
-	}
+
 	root := filepath.Join(gopath,"/src/github.com/canerakdas/potato")
 
 	tpl = template.Must(template.ParseGlob(filepath.Join(root, "templates", "*")))
