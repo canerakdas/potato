@@ -26,10 +26,11 @@ type dir struct {
 var tpl *template.Template
 
 func init() {
-	root, err := filepath.Abs(filepath.Dir(os.Args[0]))
-	if err != nil {
-		log.Fatal(err)
+	gopath := os.Getenv("GOPATH")
+	if gopath == "" {
+		gopath = build.Default.GOPATH
 	}
+	root := filepath.Join(gopath,"/src/github.com/canerakdas/potato")
 
 	tpl = template.Must(template.ParseGlob(filepath.Join(root, "templates", "*")))
 }
