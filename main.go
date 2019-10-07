@@ -3,9 +3,9 @@ package main
 import (
 	"flag"
 	"fmt"
+	"os"
 	"potato/color"
 	"potato/new"
-	"os"
 )
 
 func main() {
@@ -13,7 +13,7 @@ func main() {
 	generateCmd := flag.NewFlagSet("generate", flag.ExitOnError)
 
 	if len(os.Args) < 2 {
-		fmt.Println(color.Bright,"USAGE  ",color.Reset)
+		fmt.Println(color.Bright, "USAGE  ", color.Reset)
 		fmt.Println("    potato new [appname]")
 		os.Exit(1)
 	}
@@ -27,7 +27,7 @@ func main() {
 	case "version":
 		fmt.Println("0.0.1")
 	default:
-		fmt.Println(color.Bright,"USAGE  ",color.Reset)
+		fmt.Println(color.Bright, "USAGE  ", color.Reset)
 		fmt.Println("    potato new [appname]")
 		os.Exit(1)
 	}
