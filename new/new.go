@@ -97,8 +97,6 @@ func Create(name string) {
 		"webpack",
 		"webpack-cli",
 		"webpack-dev-server",
-		"redux",
-		"react-redux",
 	}
 
 	for i, v := range args {
