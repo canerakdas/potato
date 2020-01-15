@@ -6,7 +6,7 @@ import (
 	"os"
 	"os/exec"
 	"path/filepath"
-	"potato/color"
+	"github.com/canerakdas/potato/color"
 	"strings"
 	"text/template"
 )
