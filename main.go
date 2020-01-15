@@ -4,8 +4,8 @@ import (
 	"flag"
 	"fmt"
 	"os"
-	"potato/color"
-	"potato/new"
+	"github.com/canerakdas/potato/color"
+	"github.com/canerakdas/potato/new"
 )
 
 func main() {
